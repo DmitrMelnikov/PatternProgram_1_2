@@ -19,7 +19,7 @@ public class Main {
         System.out.print(logger.outTime() + " Введите порог для фильтра: ");
         int filterNum = in.nextInt();
         Filter filter = new Filter(filterNum);
-        List<Integer> arrResult = filter.filterOut(fillingArr(size, upNum));
+        List<Integer> arrResult = filter.filterOut(randomArr);
         logger.log(logger.outTime() + " Отфильтрованный список: " + arrResult.toString());
         logger.log(logger.outTime() + " Окончание работы.");
     }
