@@ -12,7 +12,7 @@ public class Filter {
         Logger logger = Logger.getInstance();
         List<Integer> result = new ArrayList<>();
 
-        for (int i = 0; i < source.size() - 1; i++) {
+        for (int i = 0; i < source.size() ; i++) {
 
             if (source.get(i) < this.treshold) {
                 result.add(source.get(i));
