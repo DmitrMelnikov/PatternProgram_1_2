@@ -18,7 +18,7 @@ public class Main {
         logger.log(logger.outTime() + " Просим пользователя ввести входные данные для фильтрации.");
         System.out.print(logger.outTime() + " Введите порог для фильтра: ");
         int filterNum = in.nextInt();
-        Filter filter = new Filter(7);
+        Filter filter = new Filter(filterNum);
         List<Integer> arrResult = filter.filterOut(fillingArr(size, upNum));
         logger.log(logger.outTime() + " Отфильтрованный список: " + arrResult.toString());
         logger.log(logger.outTime() + " Окончание работы.");
